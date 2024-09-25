@@ -6,15 +6,7 @@
   "scripts": {
     "test": "echo \"Warning: No tests created yet.\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Gone-M/COMP104.git"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Gone-M/COMP3104/issues"
-  },
-  "homepage": "https://github.com/Gone-M/COMP3104#readme"
+  "license": "ISC"
 }
