@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-  - "18"  # Use a compatible Node.js version like 14, 16, or 18
-dist: focal  # This uses Ubuntu 20.04
+  - "18"
+dist: focal
 script:
   - npm test
 deploy:
@@ -12,4 +12,4 @@ deploy:
   on:
     branch: main
 before_install:
-  - nvm install 18  # Install Node.js version 18
+  - nvm install 18
