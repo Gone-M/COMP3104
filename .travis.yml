@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "14"
-dist: bionic 
+dist: bionic
 script:
   - npm test
 deploy:
@@ -11,3 +11,5 @@ deploy:
   local_dir: build
   on:
     branch: main
+before_install:
+  - nvm install 14
