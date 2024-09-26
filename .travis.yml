@@ -7,7 +7,7 @@ script:
 
 deploy:
   provider: pages
-  token: toki
+  token: $toki  # Reference the environment variable "toki" set in Travis CI
   keep_history: true
   local_dir: build
   on:
