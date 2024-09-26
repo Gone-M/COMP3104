@@ -1,35 +1,18 @@
 language: node_js
 node_js:
   - "18"
-
 dist: focal
-
-before_install:
-  - nvm install 18
-  - nvm use 18
-
-install:
-  - npm ci
-
 script:
   - npm test
 
 deploy:
   provider: pages
-  token: $toki
+  token: toki
   keep_history: true
   local_dir: build
   on:
     branch: main
-  cleanup: false
 
-cache:
-  directories:
-    - node_modules
-
-notifications:
-  email:
-    recipients:
-      - your_email@example.com
-    on_success: change
-    on_failure: always
+before_install:
+  - nvm install 18
+  - nvm use 18
